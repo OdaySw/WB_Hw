@@ -1,0 +1,155 @@
+                /************************                               *************************/
+                /************************         index02 Styling       *************************/
+                /************************                               *************************/
+
+
+
+                @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
+                *{
+                    padding: 0;
+                    box-sizing: border-box;
+                    font-family: "Poppins", sans-serif;
+                    margin: 0;
+                    color: black;
+                }
+                
+                h1{
+                    color: #654EA3;
+                    text-shadow: 9px 9px 9px #EAAFC8;
+                    font-family: 'Creepster', cursive;
+                }
+                
+                .h2{
+                    padding: 0;
+                    background: linear-gradient(120deg,#654EA3, #EAAFC8);
+                    height: 100vh;
+                    margin: 0;
+                }
+                
+                span {
+                    color: black;
+                }
+                
+                .center{
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 400px;
+                    background: white;
+                    border-radius: 60px;
+                    box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
+                    position: absolute;
+                }
+                
+                .center h1{
+                    padding: 20px 0;
+                    border-bottom: 1px solid silver;
+                    text-align: center;
+                }
+                
+                .center form{
+                    box-sizing: border-box;
+                    padding: 0 40px;
+                }
+                
+                form .txt_field{
+                    border-bottom: 2px solid #adadad;
+                    margin: 30px 0;
+                    position: relative;
+                }
+                
+                .txt_field input{
+                    padding: 0 5px;
+                    height: 40px;
+                    font-size: 16px;
+                    border: none;
+                    background: none;
+                    outline: none;
+                    width: 100%;
+                }
+                .txt_field label{
+                    top: 50%;
+                    left: 5px;
+                    color: #adadad;
+                    transform: translateY(-50%);
+                    font-size: 16px;
+                    pointer-events: none;
+                    transition: .5s;
+                    position: absolute;
+                }
+                
+                .txt_field span::before{
+                    position: absolute;
+                    top: 40px;
+                    left: 0;
+                    width: 0%;
+                    height: 2px;
+                    background: #EAAFC8;
+                    transition: .5s;
+                    content: '';
+                }
+                
+                .txt_field input:focus ~ label,
+                .txt_field input:valid ~ label{
+                    color: #654EA3;
+                    top: -5px;
+                }
+                
+                .txt_field input:focus ~ span::before,
+                .txt_field input:valid ~ span::before{
+                    width: 100%;
+                }
+                
+                .pass{
+                    color: #a6a6a6;
+                    cursor: pointer;
+                    margin: -5px 0 20px 5px;
+                }
+                
+                .pass:hover{
+                    text-decoration: underline;
+                }
+                
+                input[type="button"]{
+                    height: 50px;
+                    border: 1px solid;
+                    background: linear-gradient(120deg,#654EA3, #EAAFC8);
+                    border-radius: 25px;
+                    font-size: 18px;
+                    color: #e9f4fb;
+                    font-weight: 700;
+                    cursor: pointer;
+                    outline: none;
+                    width: 100%;
+                }
+                
+                input[type="button"]:hover{
+                    transition: .5s;
+                    border-color: #2691d9;
+                }
+                
+                .signup_link{
+                    text-align: center;
+                    font-size: 16px;
+                    color: #666666;
+                    margin: 30px 0;
+                }
+                
+                .signup_link a{
+                    text-decoration: none;
+                    color: #2691d9;
+                }
+                
+                .signup_link a:hover{
+                    text-decoration: underline;
+                }
+                
+                
+                
+                
+                
+                                /************************                               *************************/
+                                /************************      index02 Styling end      *************************/
+                                /************************                               *************************/
+                
+                

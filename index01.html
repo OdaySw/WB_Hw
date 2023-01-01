@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html> 
+
+<head> 
+    
+    <title> Signup </title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CSS files Link -->
+    
+    <link rel="stylesheet" href="style01.css">
+    <link rel="stylesheet" href="css\bootstrap.min.css"> 
+
+</head>
+<body class="index01">
+    <div class="container">
+        <h1 class="form-title">Registration</h1>
+
+        <form action="#">
+            <div class="main-user-info">
+                
+                
+                <div class="user-input-box">
+                    <label for="fullName">Full Name</label>
+                        <input  type="text"
+                                id="fullName"
+                                name="fullName"
+                                placeholder="Enter Full Name"
+                                required/>
+                </div>
+                
+                <div class="user-input-box">
+                    <label for="username">Username</label>
+                        <input  type="text"
+                                id="username"
+                                name="username"
+                                placeholder="Enter Username"
+                                required/>
+                </div>
+
+                <div class="user-input-box">
+                    <label for="email">Email</label>
+                        <input  type="email"
+                                id="email"
+                                name="email"
+                                placeholder="someone@example.com"
+                                required/>
+                </div>
+
+                <div class="user-input-box">
+                    <label for="phoneNumber">Phone Number</label>
+                        <input  type="tel"
+                                id="phoneNumber"
+                                name="phoneNumber"
+                                placeholder="Enter Phone Number"
+                                value="+963"
+                                required/>
+                </div>
+
+                <div class="user-input-box">
+                    <label for="password">Password</label>
+                        <input  type="password"
+                                id="password"
+                                name="password"
+                                placeholder="********"
+                                required/>
+                </div>
+
+                <div class="user-input-box">
+                    <label for="confirmPassword">Confirm Password</label>
+                        <input  type="password"
+                                id="confirmPassword"
+                                name="confirmPassword"
+                                placeholder="Confirm Password"
+                                required/>
+                </div>
+            </div>
+
+
+            <div class="gender-details-box">
+                <span class="gender-title">Gender</span>
+                    <div class="gender-category">
+                        <input type="radio" name="gender" id="male">
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="female">
+                        <label for="female">Female</label>
+                    </div>
+            </div>
+        
+            <div class="gender-details-box">
+                <span class="gender-title">Select Title</span>
+                    <div class="gender-category">
+                        <input type="radio" name="title" id="male" required>
+                        <label for="male">Mr</label>
+                        <input type="radio" name="title" id="female" required>
+                        <label for="female">Mrs</label>
+                        <input type="radio" name="title" id="other" required>
+                        <label for="other">Miss</label>
+                        <input type="radio" name="title" id="other" required>
+                        <label for="other">Messrs</label>
+                        <input type="radio" name="title" id="other" required>
+                        <label for="other">Dr</label>
+                        <input type="radio" name="title" id="other" required>
+                        <label for="other">Other</label>
+                    </div>
+            </div>
+
+            <div class="user-input-box">
+                <label for="confirmPassword">Select City </label>
+                <select name="City" id="City" required="required">
+                    <option value="" selected="selected">Damascus</option>
+                            <option value="" > Damascus</option>
+                            <option value="" > Aleppo</option>
+                            <option value="" > Latakia</option>
+                            <option value="" > Hama</option>
+                            <option value="" > Homs</option>
+                            <option value="" > Tartous</option>
+                            <option value="" > As Swaida</option>
+                            <option value="" > Qounitra</option>
+                            <option value="" > Daraa</option>
+                            <option value="" > Deir azor</option>
+                            <option value="" > Hassaka</option>
+                            <option value="" > Kamishli</option>
+                            <option value="" > Raqqa</option>
+                </select>
+            </div>
+
+            <div class="user-input-box">
+                <label for="confirmPassword">Select occupation</label>
+                <select required name="Occupation" id="Occupation">
+                    <option value="" selected="selected">Select occupation</option>
+                            <option value="1" >Accounting/Finance</option>
+                            <option value="2" >Information Technology</option>
+                            <option value="4" >Consulting/Legal</option>
+                            <option value="5" >Customer Service/Support</option>
+                            <option value="6" >Education/Training</option>
+                            <option value="7" >Telecomunications/Network</option>
+                            <option value="9" >General Administrative</option>
+                            <option value="10" >Government/Military</option>
+                            <option value="11" >Human Resources/Management</option>
+                            <option value="12" >Manufacturing/Production/Operations</option>
+                            <option value="13" >Professional (medical, legal, etc.)</option>
+                            <option value="14" >Research and Development</option>
+                            <option value="15" >Marketing</option>
+                            <option value="16" >Sales and Distribution</option>
+                            <option value="17" >Selft-employed/Owner</option>
+                            <option value="18" >Student</option>
+                            <option value="19" >Tradesman/Craftsman</option>
+                            <option value="20" >Unemployed/Between Jobs</option>
+                            <option value="21" >Other</option>
+                </select>
+            </div>
+
+            <div class="user-input-box">
+                <label for="username">Date</label>
+                    <input  type="date"
+                            id="username"
+                            name="username"
+                            placeholder="Enter Username"
+                            value="01-01-1990"
+                            required/>
+            </div>
+            
+            <br> <br> 
+
+            <div> 
+                <input  type="checkbox"
+                        id="username"
+                        name="username"
+                        placeholder="Enter Username"
+                        style="width:30px;"
+                        required/>
+                        <label style="font-size: large;"> Accept Terms and Condition </label>
+            </div>
+            
+            <div class="form-submit-btn">
+                <input type="submit" value="Register">
+            </div>
+        
+        
+        </form>
+    </div>
+</body>
+
+<footer> </footer>
+
+    
+</html>
